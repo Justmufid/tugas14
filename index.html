@@ -1,0 +1,80 @@
+<html>
+<title><w3 class="css"></w3></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body bgcolor="black">
+
+<div class="w3-container w3-center">
+<img src="header.jpg" width="60%" height="30%">
+</div>
+
+<div class="w3-bar w3-orange w3-container">
+ <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Pakaian')">Pakaian</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Map')">Map</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Monster')">Monster</button>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-orange">Pekerjaan</button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="javascript:openKota('Memancing')" class="w3-bar-item w3-button w3-black">Memancing</a>
+        <a href="javascript:openKota('Menebang')"  class="w3-bar-item w3-button w3-black">Menebang</a>
+        <a href="javascript:openKota('Menambang')"  class="w3-bar-item w3-button w3-black">Menambang</a>
+      </div>
+    </div>
+</div>
+
+<div id="Home" class="w3-container kota w3-center w3-animate-zoom ">
+    <h1 style="color: aliceblue;">Welcome</h1>
+    <p style="color: aliceblue;">NEW WORLD</p>
+</div>
+
+<div id="Profile" class="w3-container kota w3-center" style="display:none">
+  <h2 style="color: aliceblue;">10121239_Mufid Raihan Satria Putra_IF-6</h2>
+  <img class="w3-animate-fading" src="mufidrhn.jfif" style="width: 400px;">
+ </div>
+
+<div id="Pakaian" class="w3-container kota w3-center" style="display:none">
+ <h2 style="color: aliceblue;">New Item</h2>
+ <img class="w3-animate-fading" src="wot.jpg" style="width: 400px;">
+</div>
+
+<div id="Map" class="w3-container kota w3-center" style="display:none">
+ <h2 style="color: aliceblue;">Map yang sangat luas</h2>
+ <img class="w3-animate-bottom" src="maps.webp" style="width: 400px;">
+</div>
+
+<div id="Pekerjaan" class="w3-container kota w3-center" style="display:none">
+ <h2 style="color: aliceblue;">Tasik</h2>
+ <img class="w3-animate-bottom" src="maps.webp" style="width: 400px;">
+</div>
+
+<div id="Monster" class="w3-container kota w3-center" style="display:none">
+ <h2 style="color: aliceblue;">All New World Boss</h2>
+ <img class="w3-animate-top" src="boss.png" style="width: 500px;">
+</div>
+  
+  
+<div id="Memancing" class="w3-container kota w3-center" style="display:none">
+  <h1 style="color:#fff">Kalian bisa menjual atau menjadikan bahan untuk makanan</h1>
+  <img class="w3-animate-zoom" src="memancing.jpg" style="width: 500px;">
+</div>
+<div id="Menebang" class="w3-container kota w3-center" style="display:none">
+  <h1 style="color:#fff">Kalian bisa menjual atau menjadikan bahan untuk membuat peralatan</h1>
+  <img class="w3-animate-zoom" src="menebang1.jpg" style="width: 500px;">
+</div>
+  <div id="Menambang" class="w3-container kota w3-center" style="display:none">
+  <h1 style="color:#fff">Kalian bisa menjual atau menjadikan bahan untuk membuat senjata</h1>
+  <img class="w3-animate-zoom" src="menambang.jpg" style="width: 500px;">
+</div>
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaKota).style.display = "block";
+}
+</script>
+</body>
+</html>
